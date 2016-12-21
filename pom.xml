@@ -18,7 +18,7 @@
 	 <dependency>
 	    <groupId>org.apache.tomcat</groupId>
 	    <artifactId>tomcat-catalina</artifactId>
-	    <version>9.0.0.M8</version>
+	    <version>8.5.8</version>
 	    <scope>provided</scope>
 	</dependency>
 	<dependency>
@@ -43,4 +43,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
